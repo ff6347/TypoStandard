@@ -1,0 +1,1 @@
+﻿var sel = app.selection;//alert(sel[0]);for(var i = 0; i < sel[0].characters.length;i++){		var val =  Math.sin((i/10))*5 ;	var c = sel[0].characters[i].pointSize =val +7;				}

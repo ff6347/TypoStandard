@@ -1,0 +1,1 @@
+﻿// Simple Hello Worldalert("Hello World");// Variable Hello World// var theText = prompt ("ENTER TEXT", "HERE", "Hello World Prompt");// alert(theText);
