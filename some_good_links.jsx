@@ -20,7 +20,8 @@ theLinks[9] = "https://github.com/fabiantheblind";
 theLinks[10] = "http://www.delicious.com/fabiantheblind/indesign";
 theLinks[11] = "http://www.the-moron.net/blog/?tag=javascript";
 theLinks[12] = "http://lmgtfy.com/?q=indesign+javascript";
-theLinks[13] = "http://www.mediawerk.de/mw/mw_htm_pages/head/InDesign-Menu.htm"
+theLinks[13] = "http://www.mediawerk.de/mw/mw_htm_pages/head/InDesign-Menu.htm";
+theLinks[14] = "http://www.kahrel.plus.com/indesign/scriptui.html";
 
 
 // now we can loop thru the array
