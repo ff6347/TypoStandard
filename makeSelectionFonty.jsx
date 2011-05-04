@@ -1,43 +1,1 @@
-// basic javascript snippets for indesign cs 4
-// written by fabiantheblind
-
-// first of all open basicDoc.idml or use script buildDocument.jsx
-// to build the doc we are using
-// select some text
-
-
-main();
-function main(){
-var theDoc = app.activeDocument;
-// Create a list of fonts
-var list_of_font = app.fonts.everyItem().name;
-
-// Make dialog box for selecting the font
-var font_dialog = app.dialogs.add({name:"Select a font"});
-with(font_dialog.dialogColumns.add()) {
-	with(borderPanels.add()) {
-		with(dialogColumns.add()) {
-			staticTexts.add({staticLabel:"fonts:"});
-		}
-		with(dialogColumns.add()) {
-			var selected_font = dropdowns.add({stringList:list_of_font, selectedIndex:0});
-		}
-	}
-}
-font_dialog.show();
-
-
-for (var i = 0; i<app.selection.length; i++) {
-	 	
-
-			var myChars = app.selection[i].characters.everyItem();
-
-
-			myChars.appliedFont =  app.fonts.item(selected_font.selectedIndex);
-
-
-}
-}
-
- 
- 
+﻿// basic javascript snippets for indesign cs 4// written by fabiantheblind// first of all open basicDoc.idml or use script buildDocument.jsx// to build the doc we are using// select some textcheckSetup ();main();function main(){var theDoc = app.activeDocument;// Create a list of fontsvar list_of_font = app.fonts.everyItem().name;// Make dialog box for selecting the fontvar font_dialog = app.dialogs.add({name:"Select a font"});with(font_dialog.dialogColumns.add()) {	with(borderPanels.add()) {		with(dialogColumns.add()) {			staticTexts.add({staticLabel:"fonts:"});		}		with(dialogColumns.add()) {			var selected_font = dropdowns.add({stringList:list_of_font, selectedIndex:0});		}	}}font_dialog.show();for (var i = 0; i<app.selection.length; i++) {	 				var myChars = app.selection[i].characters.everyItem();			myChars.appliedFont =  app.fonts.item(selected_font.selectedIndex);}} function checkSetup(){				if(app.documents.length < 1){			alert("You need a document with a page and a textframe with some text\nYour document is missing\nUse \"buildDocument.jsx\"!");			exit();			}		if(app.documents.item(0).pages.item(0).textFrames.length < 1){			alert("You need a document with a page and a textframe with some text\nYour textframe is missing\nUse \"buildDocument.jsx\"!");			exit();			}		if(app.documents.item(0).pages.item(0).textFrames.item(0).characters.length < 1){			alert("You need a document with a page and a textframe with some text\nYour textframe has no content\nUse \"buildDocument.jsx\"!");			exit();			}			} 
