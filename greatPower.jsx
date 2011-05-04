@@ -1,1 +1,1 @@
-﻿// Like Uncle Ben saz: "With great power comes great responsability!"app.documents.everyItem().close(SaveOptions.NO);
+﻿// alert("Like Uncle Ben saz:\n\"With great power comes great responsability!\"");app.documents.everyItem().close(SaveOptions.NO);

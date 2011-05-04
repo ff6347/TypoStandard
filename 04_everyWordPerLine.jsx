@@ -1,28 +1,1 @@
-// basic javascript snippets for indesign cs 4
-// written by fabiantheblind
-
-// first of all open basicDoc.idml or use script buildDocument.jsx
-// to build the doc we are using
-
-//this runs the function
-main();
-// this is the function
-function main(){
-// setup some variables
-var theDoc = app.activeDocument; // active doc
-var thePage = theDoc.pages.item(0); // first page
-var theTextFrame = thePage.textFrames.item(0); // the one textframe that is there
-
-// now we can loop thru lines ofthe text
-for(var i = 0;i < theTextFrame.lines.length; i++){
-
-	// the next line loops thru all words in the line
-	for(var j = 0;j < theTextFrame.lines.item(i).words.length ;j++){
-		var theValue = Math.random()*100;
-			if(theValue < 10){
-				theValue = 10;	
-			}
-		theTextFrame.lines.item(i).words.item(j).fillTint = theValue;
-		}
-	}
-}
+﻿// basic javascript snippets for indesign cs 4// written by fabiantheblind// first of all open basicDoc.idml or use script buildDocument.jsx// to build the doc we are using//this runs the functionmain();// this is the functionfunction main(){// setup some variablesvar d = app.activeDocument; // active docvar pg = d.pages.item(0); // first pagevar tf = pg.textFrames.item(0); // the one textframe that is there// now we can loop thru lines ofthe textvar lns = tf.lines;for(var i = 0;i < lns.length; i++){	var l = lns[i];	// the next line loops thru all words in the line	var wrds = l.words;	for(var j = 0;j < wrds.length ;j++){		w = wrds[j];		var val = Math.random()*100;			if(val < 10){				val = 10;				}		w.fillTint = val;		// or use		// app.activeDocument.pages.item(0).textFrames.item(0).lines.item(i).words.item(j).fillTint = val;		}	}}
