@@ -1,5 +1,5 @@
 #TypoStandard Workshop by fabiantheblind  
-Some javascripts for InDesign for use @ the TypoStandard Scripting Workshop on friday the sixth may twotousendeleven
+Some javascripts for InDesign for use @ the TypoStandard Scripting Workshop on friday the sixth may twotousendeleven in Potsdam
   
   
 ###Install  
