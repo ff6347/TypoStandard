@@ -1,0 +1,1 @@
+﻿var dlg = app.dialogs.add({name: "Hello World",canCancel: true});// dlg.name = "Hello World";//dlg.canCancel = true;var result  = dlg.show();if(result == true){			alert("You clicked \"OK\"");	}else{		alert("You clicked \"Abbrechen\"");				}

@@ -1,0 +1,1 @@
+﻿var val = prompt("What is 2 plus 2?","5");if(val == 5){		alert("You are a good party member");	}else if(val == 4){		alert("Are you shure?");				} else{					alert("Go straight to room 101");						}
